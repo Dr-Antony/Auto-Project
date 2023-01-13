@@ -19,6 +19,7 @@ html, body {
     ==================HEADER TOP===================== */
 .header__top {
     padding-bottom: 80px;
+
 }
 
 .container {}
@@ -33,10 +34,15 @@ html, body {
     margin-right: 400px
 }
 
-.logo {}
+.logo {
+    animation-name: logoBottom;
+    animation-duration: 1s;
+}
 
 .header__nav {
     padding-top: 32px;
+    animation-name: logoBottom;
+    animation-duration: 1s;
 
 }
 
@@ -70,6 +76,8 @@ html, body {
     display: flex;
     align-items: center;
     padding-top: 18px;
+    animation-name: callBoxOpa;
+    animation-duration: 1.4s;
 }
 
 .header__call-box::before {
@@ -81,19 +89,26 @@ html, body {
     margin-right: 32px;
 }
 
-.header__call-btn {
+.header__call-btn svg {
     border-radius: 50%;
     margin-right: 14px;
-    transition: .3s;
+    transition: all .3s;
 }
 
 .header__call-btn:hover svg {
     box-shadow: 0 0 0 10px rgba(31, 209, 40, 0.12);
-    transition: .5s;
+    transition: all .5s;
     border-radius: 100%
 }
 
-.header__call-info {}
+.header__call-btn:hover {
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+.header__call-info {
+    transform: translateY(-45%);
+}
 
 .header__call-text {
     font-weight: 500;
@@ -104,8 +119,15 @@ html, body {
 
 .header__call-number {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 175%;
+    transition: all .3s;
+    position: absolute;
+}
+
+.header__call-number:hover {
+    transition: .3s;
+    transform: scale(1.05);
 }
 
 /* ===================HEADER MAIN=====================
@@ -116,6 +138,7 @@ html, body {
     align-items: center;
     flex-grow: 1;
     justify-content: space-between;
+    padding-bottom: 135px;
 }
 
 .header__body-inner {
@@ -140,6 +163,8 @@ html, body {
     margin-bottom: 32px;
     width: 590px;
     height: 252px;
+    animation-name: titleRight;
+    animation-duration: 1.5s;
 }
 
 .header__content-buttons {
@@ -163,6 +188,8 @@ html, body {
     position: relative;
     margin-right: 50px;
     transition: all .2s;
+    animation-name: btnRight;
+    animation-duration: 1.2s;
 }
 
 .header__content-btn:hover {
@@ -170,7 +197,25 @@ html, body {
     transform: scale(1.05);
 }
 
-.header__play {}
+.header__play {
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    animation-name: playLeft;
+    animation-duration: 1.4s;
+}
+
+.header__play:hover svg {
+    transform: scale(1.1);
+    transition: all .3s;
+    box-shadow: 0 0 0 5px rgba(8, 8, 8, 0.12);
+    border-radius: 100%;
+}
+
+.header__play svg {
+    margin-right: 8px;
+    transition: all .3s;
+}
 
 .play__text {
     font-weight: 500;
@@ -182,6 +227,8 @@ html, body {
     margin-left: 35px;
     position: relative;
     align-items: center;
+    animation-name: timeTop;
+    animation-duration: 1.1s;
 }
 
 .header__content-timework::before {
@@ -212,10 +259,150 @@ html, body {
 .header__image {
     z-index: 1;
     position: relative;
+    animation-name: imgLeft;
+    animation-duration: 1s;
+    box-shadow: 0px 80px 80px -20px rgb(154 156 165 / 16%), 0px 30px 24px -10px rgb(154 156 165 / 10%), 0px 12px 10px -6px rgb(154 156 165 / 8%), 0px 4px 4px -4px rgb(30 33 44 / 5%);
+    transition: all .4s;
+}
+
+.header__image:hover {
+    transition: .4s;
+    transform: scale(1.01);
 }
 
 .rating {
     z-index: 2;
+}
+
+.rating__btn {
+    animation-name: ratingOpacity;
+    animation-duration: 2s;
+    transition: all .5s;
+}
+
+/* =============KEYFRAMESofFIRSTpage================= */
+
+@keyframes titleRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px)
+    }
+
+    80% {
+        transform: translateX()
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes imgLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(200px)
+    }
+
+    80% {
+        transform: translateX()
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes btnRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px)
+    }
+
+    80% {
+        transform: translateX()
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes playLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(200px)
+    }
+
+    80% {
+        transform: translateX()
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes timeTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    80% {
+        transform: translateX()
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes logoBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px)
+    }
+
+    80% {
+        transform: translateX()
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes callBoxOpa {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    80% {}
+
+    100% {
+        opacity: 1;
+        transform: translateY(px);
+    }
+}
+
+@keyframes ratingOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    80% {}
+
+    100% {
+        opacity: 1;
+
+    }
 }
 
 /* ===============RATING================= */
@@ -295,4 +482,82 @@ html, body {
     opacity: 2;
 
     box-shadow: 100px 28px 118px rgba(109, 108, 115, 0.12);
+}
+
+
+/* ===================MAIN OFFER=====================
+    ==================MAIN OFFER===================== */
+
+.main__offer {
+    width: 100%;
+    height: 100%;
+    background: #F2F2F2;
+}
+
+.offer {
+    padding-top: 128px;
+    /* width: 100%;
+    height: 100%;
+    background: #F2F2F2; */
+}
+
+
+.offer__inner {
+    /* margin-top: 128px ; */
+    background: #F2F2F2;
+}
+
+.offer__heading {}
+
+.heading {
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.offer__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+
+.offer__subtitle {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 76px;
+}
+
+.offer__list {}
+
+.offer__items {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(4, 1fr);
+
+}
+
+.offer__item {
+    width: 316px;
+    height: 232px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 8px;
+}
+
+.offer__item svg {}
+
+.item-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* display: block;
+    align-items:center;
+    justify-content: center; */
+}
+
+.offer__item-inner {
+    text-align: center;
+    display: inline-block;
 }
