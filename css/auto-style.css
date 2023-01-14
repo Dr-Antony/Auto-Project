@@ -496,6 +496,7 @@ html, body {
 
 .offer {
     padding-top: 128px;
+    padding-bottom: 192px;
     /* width: 100%;
     height: 100%;
     background: #F2F2F2; */
@@ -507,11 +508,17 @@ html, body {
     background: #F2F2F2;
 }
 
-.offer__heading {}
-
-.heading {
+.offer__heading {
     margin-bottom: 64px;
     text-align: center;
+    transform: translate(0px, 100px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.offer__heading._active {
+    transform: translate(0, 0);
+    opacity: 1;
 }
 
 .offer__title {
@@ -544,9 +551,23 @@ html, body {
     background: #FFFFFF;
     border-radius: 4px;
     margin: 8px;
+    transition: all .3s;
 }
 
-.offer__item svg {}
+.offer__item:hover {
+    background: #FF6433;
+    transition: .3s;
+    transform: scale(1.01);
+}
+
+
+.offer__item:hover path {
+    fill: #FFFFFF;
+}
+
+.offer__item:hover p {
+    color: #FFFFFF;
+}
 
 .item-text {
     font-weight: 600;
@@ -561,3 +582,7 @@ html, body {
     text-align: center;
     display: inline-block;
 }
+
+/* .offer__svg:hover path {
+    fill:red;
+} */
