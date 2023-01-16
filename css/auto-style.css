@@ -60,6 +60,7 @@ html, body {
 .header__nav-item:hover {
     transition: all .3s;
     transform: scale(1.05);
+    color: #FF6433 ;
 }
 
 .header__nav-item:last-child {
@@ -586,3 +587,145 @@ html, body {
 /* .offer__svg:hover path {
     fill:red;
 } */
+
+
+/* ===================MAIN PROCESS=====================
+    ==================MAIN PROCESS===================== */
+
+.main__process {}
+
+.process {}
+
+.container {}
+
+.process__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 134px;
+    padding-bottom: 134px;
+}
+
+.process__content {}
+
+.process__title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 76px;
+    letter-spacing: -0.03em;
+    width: 524px;
+    height: 228px;
+    margin-bottom: 16px;
+}
+
+.process__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.6;
+    width: 437px;
+    height: 56px;
+    margin-bottom: 32px;
+}
+
+.process__button {}
+
+.process__btn {
+    border-radius: 12px;
+    Width: 177px;
+    Height: 64px;
+}
+
+.process__steps {}
+
+.steps__items {
+    position: relative;
+}
+
+.steps__item {
+    width: 336px;
+    height: 152px;
+}
+
+.item-1::before {
+    content: "";
+    left: -30%;
+    top: -3%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: url("../images/Page-3/circle-1.svg") no-repeat;
+}
+
+.item-1::after {
+    content: "";
+    left: -19%;
+    top: 14%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: url("../images/Page-3/line.svg") no-repeat;
+}
+
+.item__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 8px;
+}
+
+.item__title:last-child {
+    margin-bottom: none;
+}
+
+.item__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+
+.item__text:last-child {
+    margin-bottom: none;
+
+}
+
+.item-2::before {
+    content: "";
+    left: -30%;
+    top: 31%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: url("../images/Page-3/circle-2.svg") no-repeat;
+}
+
+.item-2::after {
+    content: "";
+    left: -19%;
+    top: 48%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: url("../images/Page-3/line.svg") no-repeat;
+}
+
+
+
+
+.item-3::before {
+    content: "";
+    left: -30%;
+    top: 65%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background: url("../images/Page-3/circle-3.svg") no-repeat;
+}
+
+/* ===============kayframes============== */
