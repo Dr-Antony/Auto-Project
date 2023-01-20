@@ -973,10 +973,10 @@ html, body {
     margin-right: 30px;
     transition: all .2s;
 }
+
 .blog__filter-btn:hover {
     transform: scale(1.02);
 }
-
 
 .blog__filter-btn:last-child {
     margin-right: none;
@@ -987,12 +987,14 @@ html, body {
     grid-template: repeat(2, auto) / repeat(3, 1fr);
     gap: 30px;
 }
+
 .blog__list-item {
     transition: all .2s;
 }
+
 .blog__list-item:hover {
     transform: scale(1.02);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     transition: .3s;
 
 }
@@ -1040,5 +1042,105 @@ html, body {
 }
 
 .blog__filter-btn--active {
-    color:#FF6433;
+    color: #FF6433;
+}
+
+/* ======================TESTIMONIALS======================
+   ======================TESTIMONIALS====================== */
+.main__testimonials {}
+
+.testimonials {
+    background: #F2F2F2;
+    padding-top: 128px;
+    padding-bottom: 206px;
+}
+
+.container {}
+
+.testimonials__inner {
+    position: relative;
+
+}
+
+.testimonials__heading {
+    margin-bottom: 70px;
+    width: 909px;
+    height: 152px;
+    text-align: center;
+    transform: translateX(125px);
+
+}
+
+.testimonials__heading-title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 76px;
+    text-align: center;
+
+}
+
+.testimonials__slider-wrapper {
+    position: relative;
+}
+
+.testimonials__slider {
+    display: flex;
+    gap: 50px;
+}
+
+.testimonials__slide {
+    background: #FFFFFF;
+    padding: 72px;
+    max-width: 616px;
+    max-height: 376px;
+}
+
+.testimonials__slide-inner {
+    max-width: 472px;
+    max-height: 232px;
+    /* display: flex; */
+    justify-content: column ;
+}
+
+.testimonials__quote {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 100%;
+}
+
+.testimonials__user {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.testimonials__avatar {
+    margin-right: 16px;
+}
+
+.testimonials__info {}
+
+.testimonials__info-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1E1B1B;
+}
+
+.testimonials__info-city {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #939191;
+}
+.testimonials__arrows{
+justify-content: flex-end;
+}
+.testimonials__arrow {
+    /* position: absolute;
+    justify-content:center; */
+}
+.testimonials__prev {
+}
+.testimonials__next {
 }
