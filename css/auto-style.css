@@ -1135,6 +1135,141 @@ html, body {
     width: 701.26px;
     height: 96px;
     display: flex;
-    padding-bottom: 40px ;
-    margin-left: 40px ;
+    padding-bottom: 40px;
+    margin-left: 40px;
 }
+
+/* ======================TOUCHINFO======================
+   ======================TOUCHINFO====================== */
+.main__touch {}
+
+.touch {
+    padding-top: 120px;
+    padding-bottom: 170px;
+}
+
+.container {}
+
+.touch__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.touch__content {}
+
+.touch__content-heading {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 84px;
+    width: 507px;
+    height: 168px;
+    margin-bottom: 48px;
+}
+
+.touch__content-form {}
+
+.touch__form-label {
+    margin-bottom: 4px;
+}
+
+.touch__form-input {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    background: #F2F2F2;
+    border-radius: 2px;
+    Width: 624px;
+    Height: 72px;
+    padding: 40px 20px;
+    border-radius: 2px;
+}
+
+.touch__content-btn {
+    background: #FF6433;
+    width: 206px;
+    height: 64px;
+    border-radius: 12px;
+    margin-top: 45px;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 40px;
+    gap: 10px;
+    transition: all .3s;
+}
+.button:hover {
+    transform: scale(1.03);
+    transition: all .3s;
+}
+
+.touch__info {
+    bottom: -45px;
+    position: relative;
+}
+
+.address {
+    margin-bottom: 32px;
+}
+
+.header-cnt {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+.info {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.contact {
+    margin-bottom: 32px;
+}
+
+.info__tel {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    transition: all .3s;
+}
+.info__tel:hover {
+    color: #FF6433;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.number {
+    margin-bottom: 2px;
+}
+
+.info__mail {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    transition: all .3s;
+}
+
+.email {
+    margin-bottom: 2px;
+}
+.info__mail:hover {
+    color: #FF6433;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.time {}
