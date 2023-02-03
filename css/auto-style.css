@@ -1145,7 +1145,7 @@ html, body {
 
 .touch {
     padding-top: 120px;
-    padding-bottom: 170px;
+    padding-bottom: 450px;
 }
 
 .container {}
@@ -1208,6 +1208,7 @@ html, body {
     gap: 10px;
     transition: all .3s;
 }
+
 .button:hover {
     transform: scale(1.03);
     transition: all .3s;
@@ -1246,6 +1247,7 @@ html, body {
     line-height: 36px;
     transition: all .3s;
 }
+
 .info__tel:hover {
     color: #FF6433;
     transform: scale(1.05);
@@ -1266,6 +1268,7 @@ html, body {
 .email {
     margin-bottom: 2px;
 }
+
 .info__mail:hover {
     color: #FF6433;
     transform: scale(1.05);
@@ -1273,3 +1276,148 @@ html, body {
 }
 
 .time {}
+
+
+/* ======================FOOTER======================
+   ======================FOOTER====================== */
+.footer {
+    position: relative;
+}
+
+.footer__img-box::before {
+    position: absolute;
+    content: "";
+    top: -310px;
+    left: 335px;
+    width: 100%;
+    height: 100%;
+    background: url("../images/footer/map.jpg") no-repeat;
+}
+
+.footer__img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.footer__top {
+    background: #1E1B1B;
+    opacity: 0.98;
+}
+
+.footer__top-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    align-items:center;
+}
+
+.ft__socials {}
+
+.socials__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    color: #FFFFFF;
+    Width: 463px;
+    Height: 134px;
+}
+
+.socials__link-items {
+    padding-top: 64px;
+    display: flex;
+}
+
+.socials__link-item {
+    margin-right: 24px;
+    transition: all .2s;
+}
+.socials__link-item:last-child {
+    margin-right: none;
+}
+.socials__link-item:hover {
+    transform: scale(1.1);
+    transition: all .2s;
+}
+
+.ft__contacts {
+    Width: 471px;
+    Height: 292px;
+    margin-right: 100px;
+}
+
+.contanct__number {
+    padding-bottom: 32px;
+}
+
+.contact__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+    color: #FFFFFF;
+    opacity: 0.6;
+    letter-spacing: -0.03em
+}
+
+.contact__content {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    letter-spacing: -0.03em
+}
+
+.content__tel {
+}
+
+.contact__address {
+    padding-bottom: 32px;
+}
+
+.contact__time {}
+
+.footer__bottom {
+    background: #1E1B1B;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.footer__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb__logo {}
+
+.fb__navigations {
+    margin-left: 80px;
+}
+
+.navigation__items {
+    display: flex;
+}
+
+.navigation__item {
+    color: #FFFFFF;
+    margin-right: 35px;
+}
+.navigation__item-link {
+    transition: all .2s;
+}
+.navigation__item {
+    transition: all .2s;
+}
+.navigation__item:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.navigation__item-link:hover {
+    color:#FF3F3A;
+    transition: all .3s;
+}
+
+.fb__copy {
+    color: #939191;
+}
